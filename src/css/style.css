@@ -35,7 +35,7 @@
 body {
   margin: 0;
   height: 992px;
-  width: 100%;
+  width: 100vw;
   background: #FFFFFF;
   opacity: 1;
 
@@ -110,6 +110,7 @@ header .header-container {
 .logo {
   display: flex;
 }
+
 
 .search {
   margin: 20px 20px;
@@ -288,6 +289,17 @@ header .header-container {
   height: 100%;
 }
 
+.rede-social-reverse {
+  display: flex;
+  justify-content: end;
+}
+
+.rede-social-reverse span {
+  display: flex;
+  justify-content: end;
+}
+
+
 .btn-banner {
   padding: 12px 0;
 }
@@ -303,10 +315,10 @@ header .header-container {
 }
 
 footer {
+  display: flex;
   margin: 50px 0;
   background-color: #1f1f1f;
   height: 70px;
-  display: flex;
   align-items: center;
 }
 
@@ -328,5 +340,44 @@ footer .footer a:hover {
 @media(max-width: 992px) {
   .container {
     flex-direction: column;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao .text-apresentacao {
+    width: 100%;
+  }
+
+  #quem-somos {
+    flex-direction: column-reverse;
+  }
+
+  #quem-somos img {
+    min-width: 320px;
+    margin: auto;
+  }
+
+  .list-services {
+    flex-direction: column;
+  }
+
+  .iten-service img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .list-plans {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .list-plans .itens-plans {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
