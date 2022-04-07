@@ -35,7 +35,7 @@
 body {
   margin: 0;
   height: 992px;
-  width: 100vw;
+  width: 100%;
   background: #FFFFFF;
   opacity: 1;
 
@@ -57,6 +57,14 @@ body::-webkit-scrollbar {
   margin: auto;
   width: 100%;
   min-width: 320px;
+}
+
+div {
+  width: 100%;
+}
+
+section {
+  width: 100%;
 }
 
 .toolbar {
@@ -109,6 +117,7 @@ header .header-container {
 
 .logo {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -164,6 +173,11 @@ header .header-container {
   font-weight: bold;
 }
 
+.top-toolbar {
+  background-color: #000;
+
+}
+
 .info-empresa {
   display: flex;
   justify-content: center;
@@ -193,15 +207,24 @@ header .header-container {
 .section {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.text-reverse {
+  text-align: end;
 }
 
 .section .banner-reverse {
   display: flex;
   flex-direction: row-reverse;
   width: 60%;
+}
+
+.container-login {
+  background-color: #fafafa;
 }
 
 
@@ -216,6 +239,7 @@ header .header-container {
   margin: 20px 0;
   width: 100%;
   height: 20%;
+  flex-wrap: wrap;
 }
 
 .section .banner .text-title {
@@ -235,6 +259,16 @@ header .header-container {
   font-weight: bold;
   color: #000000;
   font-family: 'Futura-Book', serif;
+}
+
+.logo-empresa {
+  text-align: center;
+  font-size: 77px;
+}
+
+.span2 {
+  font-size: 150px;
+  width: 100%;
 }
 
 .paragraph {
@@ -289,6 +323,10 @@ header .header-container {
   height: 100%;
 }
 
+.button-img {
+  padding: 12px 0;
+}
+
 .rede-social-reverse {
   display: flex;
   justify-content: end;
@@ -297,6 +335,11 @@ header .header-container {
 .rede-social-reverse span {
   display: flex;
   justify-content: end;
+}
+
+.text-title {
+  display: block;
+  width: 100%;
 }
 
 
@@ -317,12 +360,14 @@ header .header-container {
 footer {
   display: flex;
   margin: 50px 0;
+  width: 100%;
   background-color: #1f1f1f;
   height: 70px;
   align-items: center;
 }
 
 footer .footer {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   justify-content: space-between;
   color: #ffffff;
@@ -339,45 +384,65 @@ footer .footer a:hover {
 
 @media(max-width: 992px) {
   .container {
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .section {
-    flex-direction: column-reverse;
-  }
-
-  .apresentacao .text-apresentacao {
-    width: 100%;
-  }
-
-  #quem-somos {
-    flex-direction: column-reverse;
-  }
-
-  #quem-somos img {
-    min-width: 320px;
-    margin: auto;
-  }
-
-  .list-services {
     flex-direction: column;
   }
 
-  .iten-service img {
-    width: 50%;
-    margin: auto;
-  }
-
-  .list-plans {
+  .banner-reverse {
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
   }
 
-  .list-plans .itens-plans {
-    max-width: 90%;
-    margin: auto;
+  .header-menu {
+    flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 20px;
+    height: 100%;
+  }
+
+  .title-empresa {
+    font-size: 100%;
+  }
+
+  .title-empresa {
+    font-size: 50%;
+  }
+
+
+  .span2 {
+    font-size: 1.3em;
+    width: 100%;
+  }
+
+  .nav-menu {
+    flex-grow: 1;
+    width: 31.4rem;
+  }
+
+  .shop-login {
+    display: flex;
+    width: 100vw;
+  }
+
+  .chase-m-f {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    width: 31.4rem;
+  }
+
+  .top-toolbar {
+    width: 31.4rem;
+  }
+
+  .conatienr-login {
+    width: 31.4rem;
   }
 }
