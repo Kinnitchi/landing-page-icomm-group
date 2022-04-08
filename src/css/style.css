@@ -324,6 +324,7 @@ header .header-container {
 }
 
 .button-img {
+  cursor: pointer;
   padding: 12px 0;
 }
 
@@ -347,7 +348,7 @@ header .header-container {
   padding: 12px 0;
 }
 
-.btn-banner button {
+button {
   background-color: #000;
   color: #fafafa;
   padding: 8px 26px;
@@ -355,6 +356,7 @@ header .header-container {
   letter-spacing: 2px;
   font-size: 10px;
   font-weight: 900;
+  cursor: pointer;
 }
 
 footer {
